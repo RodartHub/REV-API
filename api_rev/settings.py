@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-lcs9v8_&+#x%end3-fpwj6ot5gl7sacn)xl6ymym$sj4iibuc*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rev-api-production.up.railway.app']
+ALLOWED_HOSTS=['*']
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Application definition
@@ -158,18 +160,18 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-CORS_ALLOWED_ORIGINS = [ 'http://localhost',
-    'https://localhost']
-CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOWED_ORIGINS = [ 'http://localhost',
+#     'https://localhost']
+# CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOW_HEADERS = [
-    'accept',
-    'accept-encoding',
-    'authorization',
-    'content-type',  # Agregar 'Content-Type' a la lista
-    'dnt',
-    'origin',
-    'user-agent',
-    'x-csrftoken',
-    'x-requested-with',
-]
+# CORS_ALLOW_HEADERS = [
+#     'accept',
+#     'accept-encoding',
+#     'authorization',
+#     'content-type',  # Agregar 'Content-Type' a la lista
+#     'dnt',
+#     'origin',
+#     'user-agent',
+#     'x-csrftoken',
+#     'x-requested-with',
+# ]
