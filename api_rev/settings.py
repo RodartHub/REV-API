@@ -161,3 +161,15 @@ MEDIA_URL = '/media/'
 CORS_ALLOWED_ORIGINS = [ 'http://localhost',
     'https://localhost']
 CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',  # Agregar 'Content-Type' a la lista
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
